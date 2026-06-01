@@ -1,0 +1,21 @@
+{
+  "name": "omnichannel-chat-hub-worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test src/**/*.test.ts",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "prettier": "latest"
+  }
+}

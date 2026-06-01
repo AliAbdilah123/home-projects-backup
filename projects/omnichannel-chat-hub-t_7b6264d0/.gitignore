@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build outputs
+frontend/dist/
+worker/dist/
+backend/bin/
+*.tsbuildinfo
+
+# local data/secrets
+.env
+*.db
+*.db-shm
+*.db-wal
+data/
+
+# editor/system
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,12 @@
+name: PR Review
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Review with Opus
+        run: echo "Replace this step with a real review action or trigger an external review service"

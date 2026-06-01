@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/components/ChannelSidebar.tsx","./src/components/ChatView.tsx","./src/components/ConversationList.tsx","./src/hooks/useChannels.ts","./src/hooks/useMessages.ts","./src/services/api.ts"],"errors":true,"version":"5.7.3"}

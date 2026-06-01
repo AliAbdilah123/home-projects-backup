@@ -1,0 +1,59 @@
+openapi: 3.0.3
+info:
+  title: AIOPS LITE API
+  version: 0.1.0
+paths:
+  /api/v1/healthz:
+    get:
+      summary: Service health check
+      responses:
+        '200':
+          description: OK
+  /api/v1/generate:
+    post:
+      summary: Generate PRD + API contract from idea
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [description]
+              properties:
+                description:
+                  type: string
+                project:
+                  type: string
+      responses:
+        '201':
+          description: PRD and contract created
+  /api/v1/tasks:
+    get:
+      summary: List tasks
+      responses:
+        '200':
+          description: Task list
+    post:
+      summary: Create task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [title, complexity, model]
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                complexity:
+                  type: string
+                  enum: [low, medium, high]
+                model:
+                  type: string
+                assignee:
+                  type: string
+      responses:
+        '201':
+          description: Task queued

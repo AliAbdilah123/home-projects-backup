@@ -1,0 +1,16 @@
+[Unit]
+Description=Omnichannel Chat Hub Baileys Worker
+After=network.target omnichannel-api.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/opc/projects/omnichannel-chat-hub
+EnvironmentFile=/home/opc/projects/omnichannel-chat-hub/deploy/env/worker.env
+ExecStart=/home/opc/projects/omnichannel-chat-hub/deploy/scripts/run-worker.sh
+Restart=always
+RestartSec=2
+User=opc
+Group=opc
+
+[Install]
+WantedBy=multi-user.target
