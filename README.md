@@ -9,6 +9,9 @@ Directories:
 - system
 - nginx-conf
 
+Active source repos:
+- omnichannel-chat-hub: also published at https://github.com/AliAbdilah123/omnichannel-chat-hub
+
 Large runtime artifacts are excluded where possible (.git, node_modules, .venv).
 
 ## Restore
